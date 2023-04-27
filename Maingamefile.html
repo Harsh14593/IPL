@@ -1,0 +1,166 @@
+<html>
+<title>Let's Play</title>
+<style>
+   .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+#i1
+        {
+            width: 44px;
+            padding: 0 8px;
+            float: left;
+        }
+        #i1
+        {
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+  .button {
+    background-color: #045f4e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  body {
+    border-color: rgb(18, 240, 218);
+
+  }
+
+  a:link {
+    color: rgb(18, 240, 218);
+  }
+
+  h1 {
+    color: rgb(6, 183, 165);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(13, 144, 148), 0 0 5px rgb(4, 48, 57);
+  }
+</style>
+<script>
+
+
+  function pic2(num) {
+    if (num == 1) {
+      document.getElementById("countdown").innerHTML = "Oops You Loose";
+      document.getElementById("img").src = "t1.jpg";
+    }
+    else if (num == 3) {
+      document.getElementById("countdown").innerHTML = "Oops You Loose";
+      document.getElementById("img").src = "r1.jpg";
+    }
+    else if (num == 2) {
+      document.getElementById("countdown").innerHTML = "Oops You Loose";
+      document.getElementById("img").src = "p1.jpg";
+    }
+  }
+
+  function pic(n) {
+
+    var a, k;
+    a = Math.floor(Math.random() * 10);
+    if (a >= 8) {
+      document.getElementById("img").usemap = "#image_map1";
+      document.getElementById("img").src = "t.jpg";
+      k = 1;
+
+      alert("Find The Thief");
+    }
+    else if (a >= 4) {
+      document.getElementById("img").usemap = "#image_map3";
+      document.getElementById("img").src = "p.jpg";
+      k = 2;
+
+      alert("Find the Butterfly");
+    }
+    else if (a >= 0) {
+
+      document.getElementById("img").usemap = "#image_map1";
+      document.getElementById("img").src = "r.jpg";
+      k = 3;
+
+      alert("Find the Dice");
+    }
+    var timeleft = 20;
+    var downloadTimer = setInterval(function () {
+      if (timeleft <= 0) {
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "Finished";
+        pic2(k);
+      } else {
+        document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+      }
+      timeleft -= 1;
+    }, 1000);
+  }
+
+  function Reset() {
+    document.getElementById("re").href = "game.html";
+
+
+  }
+
+</script>
+<style>
+
+</style>
+
+<body background="1624.jpg">
+  <div class="topnav">
+    <br><a href="index.html"><img src="ipl.jpg" alt="Document" id="i1"></a>
+    <a href="index.html">Home</a>
+    <a href="Teams.html">Teams</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Maingamefile.html">Game</a>
+</div>
+  <font align="left
+                " color="white" size="48" face="">
+    <h1><u>Look and Find</u></h1>
+  </font>
+  <center>
+    <font color="white">
+      <div id="countdown" style="font-size:28;
+      background-color:rgb(205, 233, 230);
+      color:black;"></div>
+      <br>
+    </font>
+  </center>
+  <center><a href="javascript:void(0)"><img height="400" width="800" id="img" border="4" usemap="#image_map1"
+        src="start.jpg"></a>
+  </center>
+  <br>
+  <br>
+  <center>
+    <button onclick="pic()" class="button">Start</button>&nbsp;&nbsp;&nbsp;
+    <a id="re"><button onclick="Reset()" class="button">Reset</button></a>
+  </center>
+  <map name="image_map1">
+    <area href="final.html" coords="641,74 688,72 718,100 703,128 647,128 611,97 " shape="polygon">
+    <area href="final.html" coords="183,173 221,173 204,208 171,197 " shape="polygon">
+    <area href="final.html" coords="377,110 407,131 395,156 350,139 " shape="polygon">
+  </map>
+</body>
+
+</html>

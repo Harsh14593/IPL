@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<head>
+    <title>
+      Home
+    </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+         }
+        body{
+            background-color:white;
+            color:rgb(12, 0, 0);
+        }
+        h1{
+            color:blue;
+        }
+        th{
+            background-color: blue;
+        }
+        .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+.owner{
+  background-color: #333;
+  color: white;
+  padding: 20px
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+#i1
+        {
+            width: 44px;
+            padding: 0 8px;
+            float: left;
+        }
+        #i1
+        {
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+        .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: 200px;
+}
+.container{
+    max-width: 300px;
+    max-height: 200px;
+    padding: 40px;
+}
+.overlay1{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  width: 380px;
+  opacity: 0;
+  transition: .5s ease;
+    background-color: aqua;
+}
+.container:hover .overlay1 {
+  opacity: 0.8;
+}
+.overlay2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  width: 380px;
+  opacity: 0;
+  transition: .5s ease;
+    background-color: yellow;
+}
+.container:hover .overlay2 {
+  opacity: 0.8;
+}
+.overlay3{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  width: 380px;
+  opacity: 0;
+  transition: .5s ease;
+    background-color: red;
+}
+.container:hover .overlay3 {
+  opacity: 0.8;
+}
+.overlay4{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  width: 380px;
+  opacity: 0;
+  transition: .5s ease;
+    background-color: blue;
+}
+.container:hover .overlay4 {
+  opacity: 0.8;
+}
+.overlay5{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  width: 380px;
+  opacity: 0;
+  transition: .5s ease;
+    background-color: pink;
+}
+.container:hover .overlay5 {
+  opacity: 0.8;
+}
+.overlay6{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  width: 380px;
+  opacity: 0;
+  transition: .5s ease;
+    background-color: purple;
+}
+.container:hover .overlay6 {
+  opacity: 0.8;
+}
+.overlay7{position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  width: 380px;
+  opacity: 0;
+  transition: .5s ease;
+    background-color:darkblue;
+}
+.container:hover .overlay7 {
+  opacity: 0.8;
+}
+.overlay8{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  width: 380px;
+  opacity: 0;
+  transition: .5s ease;
+    background-color: green;
+}
+.container:hover .overlay8 {
+  opacity: 0.8;
+}
+.overlay9{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  width: 380px;
+  opacity: 0;
+  transition: .5s ease;
+    background-color: orange;
+}
+.container:hover .overlay9 {
+  opacity: 0.8;
+}
+.overlay10{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  width: 380px;
+  opacity: 0;
+  transition: .5s ease;
+    background-color: rgb(240, 54, 54);
+}
+.container:hover .overlay10 {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.para{
+  background-color: #283666;
+  border: #333;
+  border-radius: 13.6;
+  margin:5px;
+  padding:10px;
+  color:white;
+}
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <br><a href="index.html"><img src="ipl.jpg" alt="Document" id="i1"></a>
+        <a href="index.html">Home</a>
+        <a href="Teams.html">Teams</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Maingamefile.html">Game</a>
+    </div>
+    <h1><font size="20">Indian Premier League</font></h1>
+    <div class="para"><font size="4"><p>The Indian Premier League (IPL) is a men's T20 franchise cricket league in India. It is annually contested by ten teams based in seven cities and three states. The league was founded by the Board of Control for Cricket in India (BCCI) in 2007. Brijesh Patel is the incumbent chairman of IPL. It is usually held annually in summer across India between March to May and has an exclusive window in the ICC Future Tours Programme.</p>
+    <p>The IPL is the most-attended cricket league in the world. In 2014, it was ranked sixth by average attendance among all sports leagues. In 2010, the IPL became the first sporting event in the world to be broadcast live on YouTube. The brand value of the IPL in 2022 was ₹90,038 crore (US$11 billion). According to BCCI, the 2015 IPL season contributed ₹1,150 crore (US$140 million) to the GDP of the Indian economy.
+
+        So far there have been fifteen seasons of the IPL tournament. The current IPL title holder franchise is Gujarat Titans, winning the 2022 season and their first season.</p></font></div>
+        <center><table>
+            <tr>
+        <td><div class="container">
+            <img src="MI.jpg" alt="MI" class="image">
+            <div class="overlay1" id="1">
+              <div class="text">Amchi Mumbai!</div>
+            </div>
+          </div></td>
+          <td><div class="container">
+            <img src="CSK.jpg" alt="CSK" class="image">
+            <div class="overlay2" id="2">
+              <div class="text">Whistle Podu!</div>
+            </div>
+          </div></td>
+          <td><div class="container">
+            <img src="PK.jpg" alt="PK" class="image">
+            <div class="overlay3" id="3">
+              <div class="text">Chak De Phatte!</div>
+            </div>
+          </div></td>
+          <td><div class="container">
+            <img src="DC.jpg" alt="DC" class="image">
+            <div class="overlay4" id="4">
+              <div class="text">Khelo Dilli!</div>
+            </div>
+          </div></td>
+        </tr>
+              <tr>
+                <td><div class="container">
+                    <img src="RR.jpg" alt="RR" class="image">
+                    <div class="overlay5" id="5">
+                      <div class="text">Halla Bol!</div>
+                    </div>
+                  </div></td>
+                  <td><div class="container">
+                    <img src="KKR.jpg" alt="KKR" class="image">
+                    <div class="overlay6" id="6">
+                      <div class="text">Korbo Lorbo Jeetbo!</div>
+                    </div>
+                  </div></td>
+                  <td><div class="container">
+                    <img src="GT.jpg" alt="GT" class="image">
+                    <div class="overlay7" id="7">
+                      <div class="text">Aava De!</div>
+                    </div>
+                  </div></td>
+                  <td><div class="container">
+                    <img src="LSG.jpg" alt="LSG" class="image">
+                    <div class="overlay8" id="8">
+                      <div class="text">Khel Nawabi!</div>
+                    </div>
+                  </div></td>
+                  </tr>
+                      <tr>
+                        <td></td>
+                        <td><div class="container">
+                            <img src="SRH.jpg" alt="SRH" class="image">
+                            <div class="overlay9" id="9">
+                              <div class="text">Shine Karo!</div>
+                            </div>
+                          </div></td>
+                          <td><div class="container">
+                            <img src="RCB.jpg" alt="RCB" class="image">
+                            <div class="overlay10" id="10">
+                              <div class="text">Play Bold!</div>
+                            </div>
+                          </div></td>
+                          <td></td>
+                          </tr>
+        </table>
+        <center>
+          <h2>Our Sponsors</h2>
+          <table>
+          <tr>
+            <td>
+              <a href="https://www.dlf.in/" alt="dlf"><img src="dlf.jpg" alt="dlf"></a>
+            </td>
+            <td>
+              <a href="https://www.pepsi.com/" alt="pepsi"><img src="pepsi.jpg" alt="pepsi"></a>
+            </td>
+            <td>
+              <a href="https://www.vivo.com/in" alt="vivo"><img src="vivo.jpg" alt="vivo"></a>
+            </td>
+            <td>
+              <a href="https://www.dream11.com/" alt="dream11"><img src="dream11.jpg" alt="dream11"></a>
+            </td>
+          </tr>
+        </table></center>
+        </center>
+        <div class="owner">
+        <center><h3>Teams</h3></center>
+        <center>
+        <table border="2%">
+            <tr>
+            <th>Team</th>
+            <th>City</th>
+            <th>Home Ground</th>
+            <th>Debut</th>
+            <th>Owner</th>
+            <th>Captain</th>
+            <th>Head Coach</th>
+            </tr>
+            <tr>
+                <td>Chennai Super Kings</td>
+                <td>Chennai</td>
+                <td>M. A. Chidambaram Stadium</td>
+                <td>2008</td>
+                <td>N. Srinivasan</td>
+                <td>M. S. Dhoni</td>
+                <td>Stephen Fleming</td>
+            </tr>
+            <tr>
+                <td>Delhi Capitals</td>
+                <td>New Delhi</td>
+                <td>Arun Jaitley Stadium</td>
+                <td>2008</td>
+                <td>Sajjan Jindal, D. M. Rao</td>
+                <td>David Warner</td>
+                <td>Ricky Ponting</td>
+            </tr>
+            <tr>
+                <td>Gujrat Titans</td>
+                <td>Ahmedabad</td>
+                <td>Narendra Modi Stadium</td>
+                <td>2022</td>
+                <td>Steve Koltes,
+                    Donald Mackenzie,
+                    Rolly van Rappard</td>
+                <td>Hardik Pandya</td>
+                <td>Ashish Nehra</td>
+            </tr>
+            <tr>
+                <td>Kolkata Knight Riders</td>
+                <td>Kolkata</td>
+                <td>Eden Gardens</td>
+                <td>2008</td>
+                <td>Shah Rukh Khan, Juhi Chawla, Jay Mehta</td>
+                <td>Shreyas Iyer</td>
+                <td>Chandrakant Pandit</td>
+            </tr>
+            <tr>
+                <td>Lucknow Super Giants</td>
+                <td>Lucknow</td>
+                <td>BRSABV Ekana Stadium</td>
+                <td>2022</td>
+                <td>Sanjiv Goenka</td>
+                <td>KL Rahul</td>
+                <td>Andy Flower</td>
+            </tr>
+            <tr>
+                <td>Mumbai Indians</td>
+                <td>Mumbai</td>
+                <td>Wankhede Stadium</td>
+                <td>2008</td>
+                <td>Mukesh Ambani</td>
+                <td>Rohit Sharma</td>
+                <td>Mark Boucher</td>
+            </tr>
+            <tr>
+                <td>Punjab Kings</td>
+                <td>Mohali</td>
+                <td>Inderjit Singh Bindra Stadium</td>
+                <td>2008</td>
+                <td>Mohit Burman, Ness Wadia, Preity Zinta, Karan Paul</td>
+                <td>Shikhar Dhawan</td>
+                <td>Trevor Bayliss</td>
+            </tr>
+            <tr>
+                <td>Rajasthan Royals</td>
+                <td>Jaipur</td>
+                <td>Sawai Mansingh Stadium</td>
+                <td>2008</td>
+                <td>Manoj Badale, Lachlan Murdoch, Gerry Cardinale, Shane Warne</td>
+                <td>Sanju Samson</td>
+                <td>Kumar Sangakara</td>
+            </tr>
+            <tr>
+                <td>Royal Challengers Bangalore</td>
+                <td>Bangalore</td>
+                <td>M. Chinnaswamy Stadium</td>
+                <td>2008</td>
+                <td>United Spirits</td>
+                <td>Faf Du Plessis</td>
+                <td>Sanjay Bangar</td>
+            </tr>
+            <tr>
+                <td>Sunrisers Hyderabad</td>
+                <td>Hyderabad</td>
+                <td>Rajiv Gandhi International Stadium</td>
+                <td>2008</td>
+                <td>Kalanithi Maran</td>
+                <td>Aiden Markram</td>
+                <td>Brian Lara</td>
+            </tr>
+        </table>
+        </center>
+        </div>
+</body>
